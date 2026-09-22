@@ -44,6 +44,46 @@ is for.
 **Tube.** Supplied with the course in the same format as the block data, with no
 provenance given.
 
+**Gulf Stream** and **Agulhas Retroflection.** Surface fields from the HYCOM
+ESPC-D-V02 global 1/12 degree ocean analysis, pulled through its NetCDF subset
+service. Both are 326x351 points over 62 hourly steps, a little over two and a
+half days, the Gulf Stream from 2 August 2026 and the Agulhas from 1 August. The
+Gulf Stream box runs 31 to 45 north and 76 to 50 west, the Agulhas box 30 to 44
+south and 12 to 38 east. Eastward and northward velocity are the vector, sea
+surface temperature is the first scalar and sea surface salinity the second. Funding for the development of HYCOM has been
+provided by the National Ocean Partnership Program and the Office of Naval
+Research, and data assimilative products using HYCOM are funded by the U.S.
+Navy.
+
 **The scalar volumes** (bonsai, tooth, carp, pig, stent, orange, tomato,
 backpack) came with the course. They are the volume rendering sets that circulate
 widely in the field, and the course material named no origin for them.
+
+**The remaining volumes** come from Pavol Klacansky's Open Scientific
+Visualization Datasets, https://klacansky.com/open-scivis-datasets/, which
+collects them from the sources credited below. Two were altered to fit in a
+browser. The stag beetle is box filtered to half resolution on every axis, from
+832x832x494 down to 416x416x247, keeping the original 12 bit value scale. The
+turbulence field was 32 bit float (not supported by the 3d viewer) so it was
+quantised to 16 bits with the top 0.1% of values clipped.
+
+- Aneurism, skull: volvis.org, with Philips Research, Hamburg, Germany and
+  Siemens Medical Solutions, Forchheim, Germany respectively
+- Blunt fin: NASA Advanced Supercomputing Division, USA
+- Teapot with lobster: volvis.org and Terarecon Inc, MERL, Brigham and Women's
+  Hospital
+- Heptane flame: The University of Utah Center for the Simulation of Accidental
+  Fires and Explosions
+- Engine block: volvis.org and General Electric
+- Hydrogen atom: volvis.org and SFB 382 of the German Research Council (DFG)
+- Marschner-Lobb: volvis.org, and Marschner and Lobb
+- Head angiography: volvis.org and Ozlem Gurvit, Institute for Neuroradiology,
+  Frankfurt, Germany
+- Stag beetle: Georg Glaeser (Vienna University of Applied Arts), Johannes
+  Kastner (Wels College of Engineering) and Meister Eduard Groller (TU Wien),
+  2005
+- Statue leg: volvis.org and the German Federal Institute for Material Research
+  and Testing (BAM), Berlin, Germany
+- Isotropic turbulence: provided by Gregory D. Abram and Gregory P. Johnson,
+  Texas Advanced Computing Center, The University of Texas at Austin, simulated
+  by Diego A. Donzis, Texas A&M University and P.K. Yeung, Georgia Tech
